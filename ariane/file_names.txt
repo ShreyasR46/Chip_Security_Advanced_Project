@@ -1,0 +1,3 @@
+tb/ariane_peripherals.sv
+src/rom2/rom2.sv
+log
