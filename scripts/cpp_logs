@@ -1,0 +1,2 @@
+The command executed is: grep -R "secure_reg" /home/parallels/Documents/Chip_Security_Advanced_Project/ariane/ > search_results.txt
+Compiling file using grep -R "secure_reg" /home/parallels/Documents/Chip_Security_Advanced_Project/ariane/ > search_results.txt
