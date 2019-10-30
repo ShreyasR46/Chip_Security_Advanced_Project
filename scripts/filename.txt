@@ -1,0 +1,7 @@
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
+

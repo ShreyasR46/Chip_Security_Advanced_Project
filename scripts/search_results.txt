@@ -1,12 +1,6 @@
-home/parallels/Documents/Chip_Security_Advanced_Project/ariane/tb/ariane_peripherals.sv:        .secure_reg ( key_reg_out)
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:   output logic [3:0][191:0]  secure_reg // Ideally [1:0] should be [RomSize-1:0]. In this case RomSize is 2.
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv://    logic [RomSize-1:0][191:0] secure_reg;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:            secure_reg <= mem;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:                secure_reg[addr_i[$clog2(RomSize)-1+3:3]] <= wdata_i;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:    assign rdata_o = (raddr_q < RomSize) ? secure_reg[raddr_q] : '0;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/log:/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/tb/ariane_peripherals.sv:        .secure_reg ( key_reg_out)
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/log:/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:   output logic [3:0][191:0]  secure_reg // Ideally [1:0] should be [RomSize-1:0]. In this case RomSize is 2.
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/log:/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv://    logic [RomSize-1:0][191:0] secure_reg;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/log:/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:            secure_reg <= mem;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/log:/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:                secure_reg[addr_i[$clog2(RomSize)-1+3:3]] <= wdata_i;
-/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/log:/home/parallels/Documents/Chip_Security_Advanced_Project/ariane/src/rom2/rom2.sv:    assign rdata_o = (raddr_q < RomSize) ? secure_reg[raddr_q] : '0;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv:        .secure_reg ( key_reg_out)
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv:   output logic [3:0][191:0]  secure_reg // Ideally [1:0] should be [RomSize-1:0]. In this case RomSize is 2.
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv://    logic [RomSize-1:0][191:0] secure_reg;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv:            secure_reg <= mem;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv:                secure_reg[addr_i[$clog2(RomSize)-1+3:3]] <= wdata_i;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv:    assign rdata_o = (raddr_q < RomSize) ? secure_reg[raddr_q] : '0;
