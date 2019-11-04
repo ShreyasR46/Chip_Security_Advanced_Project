@@ -1,0 +1,6 @@
+output logic [3:0][191:0]  secure_reg // Ideally [1:0] should be [RomSize-1:0]. In this case RomSize is 2.
+//    logic [RomSize-1:0][191:0] secure_reg;
+secure_reg <= mem;
+secure_reg[addr_i[$clog2(RomSize)-1+3:3]] <= wdata_i;
+assign rdata_o = (raddr_q < RomSize) ? secure_reg[raddr_q] : '0;
+.secure_reg ( key_reg_out)
