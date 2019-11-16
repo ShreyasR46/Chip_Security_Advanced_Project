@@ -1,51 +1,706 @@
-The command executed is: grep -R "secure_reg" ~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/ > search_results.txt
-Compiling file using grep -R "secure_reg" ~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/ > search_results.txt
-The nread value is: 151
-length = 151: 
+The command executed is: grep -R "aes" ~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/ > search_results.txt
+Compiling file using grep -R "aes" ~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/ > search_results.txt
+The nread value is: 171
+length = 171: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//Makefile
+        $(wildcard src/aes/*.v)                                      \
+
+The nread value is: 172
+length = 172: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//Makefile
+        $(wildcard src/aes/*.sv)                                      \
+
+The nread value is: 166
+length = 166: 
  total length = 0
 
 
 /Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
-        .secure_reg ( key_reg_out)
+    AXI_BUS.in                 aes             , 
 
-The nread value is: 218
-length = 218: 
+The nread value is: 143
+length = 143: 
  total length = 0
 
 
-/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
-   output logic [3:0][191:0]  secure_reg // Ideally [1:0] should be [RomSize-1:0]. In this case RomSize is 2.
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    ) reg_bus_aes (clk_i);
+
+The nread value is: 148
+length = 148: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    //logic [191:0] aes_key_in;
+
+The nread value is: 147
+length = 147: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic         aes_penable;
+
+The nread value is: 146
+length = 146: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic         aes_pwrite;
+
+The nread value is: 145
+length = 145: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic [31:0]  aes_paddr;
+
+The nread value is: 144
+length = 144: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic         aes_psel;
+
+The nread value is: 146
+length = 146: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic [31:0]  aes_pwdata;
+
+The nread value is: 146
+length = 146: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic [31:0]  aes_prdata;
+
+The nread value is: 146
+length = 146: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic         aes_pready;
+
+The nread value is: 147
+length = 147: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    logic         aes_pslverr;
+
+The nread value is: 144
+length = 144: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    ) i_axi2apb_64_32_aes (
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWID_i    ( aes.aw_id     ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWADDR_i  ( aes.aw_addr   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWLEN_i   ( aes.aw_len    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWSIZE_i  ( aes.aw_size   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWBURST_i ( aes.aw_burst  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWLOCK_i  ( aes.aw_lock   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWCACHE_i ( aes.aw_cache  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWPROT_i  ( aes.aw_prot   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWREGION_i( aes.aw_region ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWUSER_i  ( aes.aw_user   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWQOS_i   ( aes.aw_qos    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWVALID_i ( aes.aw_valid  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .AWREADY_o ( aes.aw_ready  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .WDATA_i   ( aes.w_data    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .WSTRB_i   ( aes.w_strb    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .WLAST_i   ( aes.w_last    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .WUSER_i   ( aes.w_user    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .WVALID_i  ( aes.w_valid   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .WREADY_o  ( aes.w_ready   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .BID_o     ( aes.b_id      ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .BRESP_o   ( aes.b_resp    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .BVALID_o  ( aes.b_valid   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .BUSER_o   ( aes.b_user    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .BREADY_i  ( aes.b_ready   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARID_i    ( aes.ar_id     ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARADDR_i  ( aes.ar_addr   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARLEN_i   ( aes.ar_len    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARSIZE_i  ( aes.ar_size   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARBURST_i ( aes.ar_burst  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARLOCK_i  ( aes.ar_lock   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARCACHE_i ( aes.ar_cache  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARPROT_i  ( aes.ar_prot   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARREGION_i( aes.ar_region ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARUSER_i  ( aes.ar_user   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARQOS_i   ( aes.ar_qos    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARVALID_i ( aes.ar_valid  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .ARREADY_o ( aes.ar_ready  ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RID_o     ( aes.r_id      ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RDATA_o   ( aes.r_data    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RRESP_o   ( aes.r_resp    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RLAST_o   ( aes.r_last    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RUSER_o   ( aes.r_user    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RVALID_o  ( aes.r_valid   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .RREADY_i  ( aes.r_ready   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PENABLE   ( aes_penable   ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PWRITE    ( aes_pwrite    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PADDR     ( aes_paddr     ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PSEL      ( aes_psel      ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PWDATA    ( aes_pwdata    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PRDATA    ( aes_prdata    ),
+
+The nread value is: 154
+length = 154: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PREADY    ( aes_pready    ),
 
 The nread value is: 153
 length = 153: 
  total length = 0
 
 
-/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
-//    logic [RomSize-1:0][191:0] secure_reg;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .PSLVERR   ( aes_pslverr   )
 
-The nread value is: 139
-length = 139: 
+The nread value is: 150
+length = 150: 
  total length = 0
 
 
-/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
-            secure_reg <= mem;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    apb_to_reg i_apb_to_reg_aes (
 
-The nread value is: 178
-length = 178: 
+The nread value is: 152
+length = 152: 
  total length = 0
 
 
-/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
-                secure_reg[addr_i[$clog2(RomSize)-1+3:3]] <= wdata_i;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .penable_i ( aes_penable ),
 
-The nread value is: 177
-length = 177: 
+The nread value is: 152
+length = 152: 
  total length = 0
 
 
-/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/rom2/rom2.sv
-    assign rdata_o = (raddr_q < RomSize) ? secure_reg[raddr_q] : '0;
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .pwrite_i  ( aes_pwrite  ),
 
-Second is : 0.003899
+The nread value is: 152
+length = 152: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .paddr_i   ( aes_paddr   ),
+
+The nread value is: 152
+length = 152: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .psel_i    ( aes_psel    ),
+
+The nread value is: 152
+length = 152: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .pwdata_i  ( aes_pwdata  ),
+
+The nread value is: 152
+length = 152: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .prdata_o  ( aes_prdata  ),
+
+The nread value is: 152
+length = 152: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .pready_o  ( aes_pready  ),
+
+The nread value is: 152
+length = 152: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .pslverr_o ( aes_pslverr ),
+
+The nread value is: 151
+length = 151: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .reg_o     ( reg_bus_aes )
+
+The nread value is: 135
+length = 135: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    aes_wrapper #(
+
+The nread value is: 138
+length = 138: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+    ) i_aes_wrapper (
+
+The nread value is: 171
+length = 171: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_peripherals.sv
+        .external_bus_io    ( reg_bus_aes            )
+
+The nread value is: 176
+length = 176: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//tb/ariane_testharness.sv
+      .aes               ( master[ariane_soc::AES]      ), 
+
+The nread value is: 212
+length = 212: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//docs/_sass/bootstrap/mixins/_forms.scss
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+
+The nread value is: 173
+length = 173: 
+ total length = 0
+
+
+Binary file /Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/fpu_div_sqrt_mvp/document/Datasheet_of_transprecision.pdf matches
+
+The nread value is: 213
+length = 213: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/pkt/pkt.sv
+ * Peripheral Key Table (PKT) takes peripheral id for the aes key and outputs location of key in the ROM2 
+
+The nread value is: 179
+length = 179: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/aes/aes_192.v
+module aes_192 (clk, start, state, key, inter_state, out, out_valid);
+
+The nread value is: 196
+length = 196: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/aes/aes_192_sed.v
+module aes_192_sed(clk, start, state, p_c_text, key, inter_state, out, out_valid);
+
+The nread value is: 128
+length = 128: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/aes/aes_192_sed.v
+	aes_192 uut (
+
+The nread value is: 136
+length = 136: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/aes/aes_wrapper.sv
+module aes_wrapper #(
+
+The nread value is: 131
+length = 131: 
+ total length = 0
+
+
+/Users/kartikeypurohit/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane//src/aes/aes_wrapper.sv
+aes_192_sed aes(
+
+

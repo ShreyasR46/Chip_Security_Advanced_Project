@@ -1,6 +1,87 @@
-        .secure_reg ( key_reg_out)
-   output logic [3:0][191:0]  secure_reg // Ideally [1:0] should be [RomSize-1:0]. In this case RomSize is 2.
-//    logic [RomSize-1:0][191:0] secure_reg;
-            secure_reg <= mem;
-                secure_reg[addr_i[$clog2(RomSize)-1+3:3]] <= wdata_i;
-    assign rdata_o = (raddr_q < RomSize) ? secure_reg[raddr_q] : '0;
+        $(wildcard src/aes/*.v)                                      \
+        $(wildcard src/aes/*.sv)                                      \
+    AXI_BUS.in                 aes             , 
+    ) reg_bus_aes (clk_i);
+    //logic [191:0] aes_key_in;
+    logic         aes_penable;
+    logic         aes_pwrite;
+    logic [31:0]  aes_paddr;
+    logic         aes_psel;
+    logic [31:0]  aes_pwdata;
+    logic [31:0]  aes_prdata;
+    logic         aes_pready;
+    logic         aes_pslverr;
+    ) i_axi2apb_64_32_aes (
+        .AWID_i    ( aes.aw_id     ),
+        .AWADDR_i  ( aes.aw_addr   ),
+        .AWLEN_i   ( aes.aw_len    ),
+        .AWSIZE_i  ( aes.aw_size   ),
+        .AWBURST_i ( aes.aw_burst  ),
+        .AWLOCK_i  ( aes.aw_lock   ),
+        .AWCACHE_i ( aes.aw_cache  ),
+        .AWPROT_i  ( aes.aw_prot   ),
+        .AWREGION_i( aes.aw_region ),
+        .AWUSER_i  ( aes.aw_user   ),
+        .AWQOS_i   ( aes.aw_qos    ),
+        .AWVALID_i ( aes.aw_valid  ),
+        .AWREADY_o ( aes.aw_ready  ),
+        .WDATA_i   ( aes.w_data    ),
+        .WSTRB_i   ( aes.w_strb    ),
+        .WLAST_i   ( aes.w_last    ),
+        .WUSER_i   ( aes.w_user    ),
+        .WVALID_i  ( aes.w_valid   ),
+        .WREADY_o  ( aes.w_ready   ),
+        .BID_o     ( aes.b_id      ),
+        .BRESP_o   ( aes.b_resp    ),
+        .BVALID_o  ( aes.b_valid   ),
+        .BUSER_o   ( aes.b_user    ),
+        .BREADY_i  ( aes.b_ready   ),
+        .ARID_i    ( aes.ar_id     ),
+        .ARADDR_i  ( aes.ar_addr   ),
+        .ARLEN_i   ( aes.ar_len    ),
+        .ARSIZE_i  ( aes.ar_size   ),
+        .ARBURST_i ( aes.ar_burst  ),
+        .ARLOCK_i  ( aes.ar_lock   ),
+        .ARCACHE_i ( aes.ar_cache  ),
+        .ARPROT_i  ( aes.ar_prot   ),
+        .ARREGION_i( aes.ar_region ),
+        .ARUSER_i  ( aes.ar_user   ),
+        .ARQOS_i   ( aes.ar_qos    ),
+        .ARVALID_i ( aes.ar_valid  ),
+        .ARREADY_o ( aes.ar_ready  ),
+        .RID_o     ( aes.r_id      ),
+        .RDATA_o   ( aes.r_data    ),
+        .RRESP_o   ( aes.r_resp    ),
+        .RLAST_o   ( aes.r_last    ),
+        .RUSER_o   ( aes.r_user    ),
+        .RVALID_o  ( aes.r_valid   ),
+        .RREADY_i  ( aes.r_ready   ),
+        .PENABLE   ( aes_penable   ),
+        .PWRITE    ( aes_pwrite    ),
+        .PADDR     ( aes_paddr     ),
+        .PSEL      ( aes_psel      ),
+        .PWDATA    ( aes_pwdata    ),
+        .PRDATA    ( aes_prdata    ),
+        .PREADY    ( aes_pready    ),
+        .PSLVERR   ( aes_pslverr   )
+    apb_to_reg i_apb_to_reg_aes (
+        .penable_i ( aes_penable ),
+        .pwrite_i  ( aes_pwrite  ),
+        .paddr_i   ( aes_paddr   ),
+        .psel_i    ( aes_psel    ),
+        .pwdata_i  ( aes_pwdata  ),
+        .prdata_o  ( aes_prdata  ),
+        .pready_o  ( aes_pready  ),
+        .pslverr_o ( aes_pslverr ),
+        .reg_o     ( reg_bus_aes )
+    aes_wrapper #(
+    ) i_aes_wrapper (
+        .external_bus_io    ( reg_bus_aes            )
+      .aes               ( master[ariane_soc::AES]      ), 
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+ * Peripheral Key Table (PKT) takes peripheral id for the aes key and outputs location of key in the ROM2 
+module aes_192 (clk, start, state, key, inter_state, out, out_valid);
+module aes_192_sed(clk, start, state, p_c_text, key, inter_state, out, out_valid);
+	aes_192 uut (
+module aes_wrapper #(
+aes_192_sed aes(
