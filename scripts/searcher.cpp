@@ -1,29 +1,23 @@
 #include<stdio.h>
 #include<iostream>
 #include<string>
+#include "searcher.h"
+using namespace std;
 
 #define AUTO
 
-using namespace std;
-
-class searchClass;  //declarartion
-class propertiesDefinition;
-class module_analysis;
-
-class searchClass
-{
-  public: 
-// This area is to assign the search strings at the default values  
 #ifdef AUTO
-    string path_to_search, keyword, filename_to_save;
-#endif    
-    
-   //member fuinction declaration
-   void take_input()
+ //searcher::path_to_search = "~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/";
+ //searcher::keyword = "\"aes\"";
+ //searcher::filename_to_save = "search_results.txt";
+
+#endif
+
+//taking manual input!!
+  void searcher::take_input()
    {
       string path_to_search, keyword, filename_to_save;
       cout<<"Provide the path to search: "<<"\n";
-      //cin.getline(filename);
       cin>>path_to_search;
       cout<<"Give the keyword to search: "<<"\n";
       cin>>keyword;
@@ -31,7 +25,9 @@ class searchClass
       cin>>filename_to_save;
    }
 
-   int grep_search_and_store(string keyword_local, string path_to_search_local, string filename_to_save_local )
+
+//grep searching
+   int searcher::grep_search_and_store(string keyword_local, string path_to_search_local, string filename_to_save_local )
    {
       string command1 = "grep -R";
       command1 = command1 + " " + keyword_local + " " + path_to_search_local + " " +  ">" + " " + filename_to_save_local;
@@ -41,7 +37,9 @@ class searchClass
       return system(command);
    }
 
-   void search_and_divide(const char *filename_name, const char *data_name, const char *dictionary_name)
+
+//segregating into different files!!
+   void searcher::search_and_divide(const char *filename_name, const char *data_name, const char *dictionary_name)
    { 
 	char dot_sv = ':';
 	FILE *dictionary, *filename, *data;
@@ -97,51 +95,4 @@ class searchClass
 	fclose(filename);
 	fclose(data);
    }   
-};
 
-class propertyDefinition
-{
-  searchClass t1;
-  t1.path_to_search = "~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/";
-  t1.keyword = "\"aes\"";
-  public:
-    long int nread;
-    long temp=0;
-    char *line = NULL;
-    size_t len = 0; 
-    void open_property_file(const char *filename)
-    {
-	FILE *property;
-        property = fopen(filename, "r");
-        if(property == NULL)
-	{
-		perror("Error opening File. ");
-	}
-        else
-	{
-		//while nread=getline()
-	}
-        
-    }
-};
-
-
-
-int main()
-{
-  searchClass object1;
-  object1.path_to_search = "~/Documents/Github_Directories/Chip_Security_Advanced_Project/ariane/";
-  object1.keyword = "\"aes\"";
-  object1.filename_to_save = "search_results.txt";
-  
-  int result = 44;
-#ifdef AUTO
-  result = object1.grep_search_and_store(object1.keyword, object1.path_to_search, object1.filename_to_save);
-  object1.search_and_divide("filename.txt", "data.txt", "search_results.txt");
-#else
-  object1.take_input();
-  result = object1.grep_search_and_store(object1.keyword, object1.path_to_search, object1.filename_to_save);
-  object1.search_and_divide("filename.txt", "data.txt", "search_results.txt");
-#endif
-  return 0;
-}

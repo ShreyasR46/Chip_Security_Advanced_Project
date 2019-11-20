@@ -1,0 +1,13 @@
+$MODULE_TYPE#AES;
+$MODULE_NAME#aes_192.v;
+$INPUT_NUMBER#4;
+$OUTPUT_NUMBER#3;
+$KEY_NAME#key;
+$INPUT_NAME%1#clk;
+$INPUT_NAME%2#start;
+$INPUT_NAME%3#state;
+$INPUT_NAME%4#key;
+$OUTPUT_NAME%1#inter_state;
+$OUTPUT_NAME%2#out;
+$OUTPUT_NAME%3#out_valid;
+$END;
