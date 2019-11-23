@@ -31,9 +31,9 @@ using namespace std;
    {
       string command1 = "grep -R";
       command1 = command1 + " " + keyword_local + " " + path_to_search_local + " " +  ">" + " " + filename_to_save_local;
-      cout<<"The command executed is: "<<command1<<"\n";
+      //cout<<"The command executed is: "<<command1<<"\n";
       const char *command = command1.c_str();
-      cout << "Compiling file using " << command << endl; 
+      //cout << "Compiling file using " << command << endl; 
       return system(command);
    }
 
@@ -52,17 +52,19 @@ using namespace std;
     	int counter=0;
         long int alphabet_array[27];
         long int temp=0, nread;
+	int empty_file = 0;
 
-
-      	filename = fopen(filename_name,"w");
-	data = fopen(data_name,"w");
+      	filename = fopen(filename_name,"a");
+	data = fopen(data_name,"a");
 	dictionary = fopen(dictionary_name, "r");
   	if(dictionary == NULL)
   	{
 		perror ("Error opening file.");
+		empty_file = 1;
  	}
 	else
 	{
+		empty_file = 0;
 		while((nread= getline(&line,&len,dictionary))!=-1)
 		{
 			cout<<"The nread value is: "<<nread<<"\n";
