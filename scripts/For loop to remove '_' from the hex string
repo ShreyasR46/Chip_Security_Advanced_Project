@@ -1,0 +1,10 @@
+for(int i=0;i<str1.length();i++) 
+	{
+		if(str1[i]=='_')
+		{
+			//cout << "Eureka: " << i << endl;
+			continue;
+		}
+		else str2+=str1[i];
+
+	}
